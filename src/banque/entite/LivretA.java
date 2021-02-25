@@ -16,7 +16,6 @@ public class LivretA extends Compte {
 	 * Constructeur sans argument
 	 */
 	public LivretA() {
-
 	}
 
 	/**

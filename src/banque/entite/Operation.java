@@ -55,11 +55,18 @@ public class Operation {
 	 * @param compte
 	 */
 	public Operation(Date date, double montant, String motif, Compte compte) {
-		super();
 		this.date = date;
 		this.montant = montant;
 		this.motif = motif;
 		this.compte = compte;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public Date getDate() {

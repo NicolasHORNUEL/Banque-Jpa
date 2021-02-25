@@ -1,5 +1,6 @@
 package banque.entite;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -22,13 +23,21 @@ public class Banque {
 	private String nom;
 
 	@OneToMany(mappedBy="banque")
-	private Set<Client> clients;
+	private Set<Client> clients  = new HashSet<>();
 	
 	/**
 	 * Constructeur sans argument
 	 */
 	public Banque() {
 		super();
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getNom() {
