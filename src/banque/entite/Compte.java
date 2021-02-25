@@ -52,6 +52,15 @@ public class Compte {
 	public Compte() {
 	}
 
+	/**
+	 * @param numero
+	 * @param solde
+	 */
+	public Compte(String numero, double solde) {
+		this.numero = numero;
+		this.solde = solde;
+	}
+
 	public String getNumero() {
 		return numero;
 	}

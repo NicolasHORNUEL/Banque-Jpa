@@ -25,6 +25,18 @@ public class AssuranceVie extends Compte {
 		super();
 	}
 
+	/**
+	 * @param numero
+	 * @param solde
+	 * @param dateFin
+	 * @param taux
+	 */
+	public AssuranceVie(String numero, double solde, Date dateFin, double taux) {
+		super(numero, solde);
+		this.dateFin = dateFin;
+		this.taux = taux;
+	}
+
 	public Date getDateFin() {
 		return dateFin;
 	}

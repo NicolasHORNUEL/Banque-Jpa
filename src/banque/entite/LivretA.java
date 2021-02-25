@@ -19,6 +19,16 @@ public class LivretA extends Compte {
 
 	}
 
+	/**
+	 * @param numero
+	 * @param solde
+	 * @param taux
+	 */
+	public LivretA(String numero, double solde, double taux) {
+		super(numero, solde);
+		this.taux = taux;
+	}
+
 	public double getTaux() {
 		return taux;
 	}

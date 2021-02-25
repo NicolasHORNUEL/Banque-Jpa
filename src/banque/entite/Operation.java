@@ -48,6 +48,20 @@ public class Operation {
 	public Operation() {
 	}
 
+	/**
+	 * @param date
+	 * @param montant
+	 * @param motif
+	 * @param compte
+	 */
+	public Operation(Date date, double montant, String motif, Compte compte) {
+		super();
+		this.date = date;
+		this.montant = montant;
+		this.motif = motif;
+		this.compte = compte;
+	}
+
 	public Date getDate() {
 		return date;
 	}

@@ -1,5 +1,7 @@
 package banque.entite;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
@@ -15,6 +17,18 @@ public class Virement extends Operation {
 	 * Constructeur sans argument
 	 */
 	public Virement() {
+	}
+
+	/**
+	 * @param date
+	 * @param montant
+	 * @param motif
+	 * @param compte
+	 * @param beneficiaire
+	 */
+	public Virement(Date date, double montant, String motif, Compte compte, String beneficiaire) {
+		super(date, montant, motif, compte);
+		this.beneficiaire = beneficiaire;
 	}
 
 	public String getBeneficiaire() {

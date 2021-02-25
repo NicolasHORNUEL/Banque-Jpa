@@ -55,6 +55,20 @@ public class Client {
 	public Client() {
 	}
 
+	/**
+	 * @param nom
+	 * @param prenom
+	 * @param dateNaissance
+	 * @param adresse
+	 */
+	public Client(String nom, String prenom, Date dateNaissance, Adresse adresse, Banque banque) {
+		this.nom = nom;
+		this.prenom = prenom;
+		this.dateNaissance = dateNaissance;
+		this.adresse = adresse;
+		this.banque = banque;
+	}
+
 	@Override
 	public String toString() {
 		return "Client " + id + " : " + nom.toUpperCase() + " " + prenom + ", né le " + dateNaissance + ".";

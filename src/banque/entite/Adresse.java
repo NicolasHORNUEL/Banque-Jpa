@@ -24,6 +24,19 @@ public class Adresse {
 	public Adresse() {
 	}
 
+	/**
+	 * @param numero
+	 * @param rue
+	 * @param codePostale
+	 * @param ville
+	 */
+	public Adresse(int numero, String rue, int codePostale, String ville) {
+		this.numero = numero;
+		this.rue = rue;
+		this.codePostale = codePostale;
+		this.ville = ville;
+	}
+
 	public int getNumero() {
 		return numero;
 	}
